@@ -6,7 +6,7 @@ module.exports = {
   entry: './src/index.tsx',
   output: {
     filename: 'app.js',
-    path: path.resolve(__dirname, './public/js')
+    path: path.resolve(__dirname, './public/js'),
   },
   module: {
     rules: [
@@ -15,8 +15,8 @@ module.exports = {
         exclude: /(node_modules|public)/,
         use: {
           loader: 'babel-loader',
-          options: babelConfig
-        }
+          options: babelConfig,
+        },
       },
       {
         test: /\.(css|scss)$/,
