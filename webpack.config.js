@@ -3,7 +3,7 @@ const babelConfig = require('./babel.config.json');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: './src/index.tsx',
   output: {
     filename: 'app.js',
     path: path.resolve(__dirname, './public/js')
@@ -11,8 +11,8 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
-        exclude: /(node_modules|pubilc)/,
+        test: /\.(j|t)sx?$/,
+        exclude: /(node_modules|public)/,
         use: {
           loader: 'babel-loader',
           options: babelConfig
@@ -20,8 +20,11 @@ module.exports = {
       },
       {
         test: /\.(css|scss)$/,
-        use: ['style-loader', 'css-loader']
-      }
-    ]
-  }
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
+  },
 };

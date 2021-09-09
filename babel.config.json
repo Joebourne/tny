@@ -1,4 +1,15 @@
 {
-  "presets": [["@babel/preset-env", { "targets": "defaults" }], "@babel/preset-react"],
-  "plugins": ["@babel/plugin-transform-runtime"]
+  "presets": [
+    "@babel/preset-typescript",
+    [
+      "@babel/preset-env",
+      {
+        "targets": "defaults"
+      }
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    "@babel/plugin-transform-runtime"
+  ]
 }

@@ -5,7 +5,8 @@
   "private": "true",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack",
+    "typescript": "yarn tsc"
   },
   "repository": {
     "type": "git",
@@ -22,10 +23,14 @@
     "@babel/plugin-transform-runtime": "^7.14.3",
     "@babel/preset-env": "^7.14.4",
     "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/react": "^17.0.20",
+    "@types/react-dom": "^17.0.9",
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.6",
     "pre-commit": "^1.2.2",
     "style-loader": "^2.0.0",
+    "typescript": "^4.4.2",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0"
   },
@@ -34,5 +39,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
-  "pre-commit": []
+  "pre-commit": [
+    "typescript"
+  ]
 }
