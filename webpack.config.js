@@ -3,7 +3,7 @@ const babelConfig = require('./babel.config.json');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.tsx',
+  entry: './src/client/index.tsx',
   output: {
     filename: 'app.js',
     path: path.resolve(__dirname, './public/js'),

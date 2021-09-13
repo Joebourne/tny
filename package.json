@@ -7,7 +7,7 @@
     "test": "jest",
     "build": "webpack",
     "typescript": "yarn tsc",
-    "lint": "yarn eslint ./src/**"
+    "lint": "yarn eslint './src/**/*'"
   },
   "repository": {
     "type": "git",
