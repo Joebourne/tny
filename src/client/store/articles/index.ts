@@ -13,7 +13,7 @@ export const fetchArticles = createAsyncThunk(
       return [];
     }
 
-    const res: Response = await fetch(`./api/v1/articles?q=${query}`);
+    const res: Response = await fetch(`/api/v1/articles?q=${query}`);
     const data: {
       articles: Omit<Article, 'id'>[];
       status: string;
