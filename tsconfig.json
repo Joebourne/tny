@@ -8,6 +8,18 @@
     "allowJs": true,
     "moduleResolution": "node",
     "allowSyntheticDefaultImports": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "baseUrl": "./src/",
+    "paths": {
+      "@client/*": [
+        "client/*"
+      ],
+      "@server/*": [
+        "server/*"
+      ],
+      "@typing/*": [
+        "typing/*"
+      ]
+    }
   }
 }
