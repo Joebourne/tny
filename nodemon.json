@@ -1,0 +1,12 @@
+{
+  "ignore": [
+    "node_modules/**"
+  ],
+  "execMap": {
+    "ts": "node --harmony"
+  },
+  "watch": [
+    "src/server/"
+  ],
+  "ext": "ts,tsx,json"
+}
